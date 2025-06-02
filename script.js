@@ -3,7 +3,7 @@ function indexOfIgnoreCase(s1, s2) {
    for(let i=1;i<=s1.length;i++){
       const string=s1.slice(left,i)
       if(s2.length===string.length){
-          if(s2===string){
+          if(s2.toLowerCase()===string.toLowerCase()){
               return left 
           }
       left++
